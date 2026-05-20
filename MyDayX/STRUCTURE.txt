@@ -1,1 +1,51 @@
-﻿
+﻿MyDayX - Project Structure
+==========================
+
+MyDayX/
+│
+├── Program.cs                        # Application entry point
+├── MyDayX.sln                        # Visual Studio solution file
+├── MyDayX.csproj                     # Project configuration
+├── .gitignore                        # Git ignore rules
+│
+├── Forms/                            # UI Screens (WinForms)
+│   ├── login.cs                      # Login screen
+│   ├── login.Designer.cs
+│   ├── login.resx
+│   ├── SignUp.cs                     # Registration screen
+│   ├── SignUp.Designer.cs
+│   ├── SignUp.resx
+│   ├── dashboard.cs                  # Main dashboard
+│   ├── dashboard.Designer.cs
+│   ├── dashboard.resx
+│   ├── budget.cs                     # Budget management
+│   ├── budget.Designer.cs
+│   ├── budget.resx
+│   ├── charts.cs                     # Charts & graphs
+│   ├── charts.Designer.cs
+│   ├── charts.resx
+│   ├── history.cs                    # Transaction history
+│   ├── history.Designer.cs
+│   ├── history.resx
+│   ├── performance.cs                # Performance tracking
+│   ├── performance.Designer.cs
+│   └── performance.resx
+│
+├── Mdels/                            # Data Models
+│   ├── User.cs                       # User model
+│   ├── Budget.cs                     # Budget model
+│   ├── Income.cs                     # Income model
+│   └── Expense.cs                    # Expense model
+│
+├── Database/                         # Database Layer (SQLite)
+│   ├── MyDatabase.cs                 # Database connection
+│   ├── BaseRepository.cs             # Base repository
+│   ├── UserRepository.cs             # User data operations
+│   ├── BudgetRepository.cs           # Budget data operations
+│   ├── TaskRepository.cs             # Task data operations
+│   ├── ReportRepository.cs           # Report data operations
+│   └── mydatabase.Designer.db        # SQLite database file
+│
+└── Properties/                       # App Properties & Resources
+    ├── Resources.cs
+    └── Resources.Designer.cs
