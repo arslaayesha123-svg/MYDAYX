@@ -34,7 +34,6 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            btnIncome = new Button();
             lblFood = new Label();
             lblTravel = new Label();
             lblStudy = new Label();
@@ -59,18 +58,18 @@
             grpIncome = new GroupBox();
             cmbSource = new ComboBox();
             grpBudgetlimit = new GroupBox();
+            lblOther = new Label();
+            lblHealth = new Label();
+            lblShopping = new Label();
+            txt6 = new TextBox();
+            txt5 = new TextBox();
+            txt4 = new TextBox();
             grpSummary = new GroupBox();
             progressBar1 = new ProgressBar();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
-            txt4 = new TextBox();
-            txt5 = new TextBox();
-            txt6 = new TextBox();
-            lblShopping = new Label();
-            lblHealth = new Label();
-            lblOther = new Label();
             grpExpenses.SuspendLayout();
             grpIncome.SuspendLayout();
             grpBudgetlimit.SuspendLayout();
@@ -123,22 +122,6 @@
             label8.Size = new Size(49, 25);
             label8.TabIndex = 7;
             label8.Text = "Date";
-            // 
-            // btnIncome
-            // 
-            btnIncome.BackColor = Color.LightCoral;
-            btnIncome.FlatAppearance.BorderColor = Color.FromArgb(192, 0, 0);
-            btnIncome.FlatAppearance.MouseDownBackColor = Color.Maroon;
-            btnIncome.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 64, 64);
-            btnIncome.FlatStyle = FlatStyle.Flat;
-            btnIncome.ForeColor = Color.White;
-            btnIncome.Location = new Point(52, 121);
-            btnIncome.Name = "btnIncome";
-            btnIncome.Size = new Size(141, 40);
-            btnIncome.TabIndex = 8;
-            btnIncome.Text = "+Add Income";
-            btnIncome.UseVisualStyleBackColor = false;
-            btnIncome.Click += btnIncome_Click;
             // 
             // lblFood
             // 
@@ -337,7 +320,6 @@
             grpIncome.Controls.Add(txtAmount);
             grpIncome.Controls.Add(label1);
             grpIncome.Controls.Add(label2);
-            grpIncome.Controls.Add(btnIncome);
             grpIncome.Location = new Point(43, 107);
             grpIncome.Name = "grpIncome";
             grpIncome.Size = new Size(278, 169);
@@ -377,6 +359,54 @@
             grpBudgetlimit.TabStop = false;
             grpBudgetlimit.Text = "Set Budget Limit";
             grpBudgetlimit.Enter += grpBudgetlimit_Enter;
+            // 
+            // lblOther
+            // 
+            lblOther.AutoSize = true;
+            lblOther.Location = new Point(31, 214);
+            lblOther.Name = "lblOther";
+            lblOther.Size = new Size(62, 25);
+            lblOther.TabIndex = 34;
+            lblOther.Text = "others";
+            // 
+            // lblHealth
+            // 
+            lblHealth.AutoSize = true;
+            lblHealth.Location = new Point(39, 175);
+            lblHealth.Name = "lblHealth";
+            lblHealth.Size = new Size(60, 25);
+            lblHealth.TabIndex = 33;
+            lblHealth.Text = "health";
+            // 
+            // lblShopping
+            // 
+            lblShopping.AutoSize = true;
+            lblShopping.Location = new Point(39, 139);
+            lblShopping.Name = "lblShopping";
+            lblShopping.Size = new Size(88, 25);
+            lblShopping.TabIndex = 32;
+            lblShopping.Text = "shopping";
+            // 
+            // txt6
+            // 
+            txt6.Location = new Point(121, 211);
+            txt6.Name = "txt6";
+            txt6.Size = new Size(150, 31);
+            txt6.TabIndex = 31;
+            // 
+            // txt5
+            // 
+            txt5.Location = new Point(122, 175);
+            txt5.Name = "txt5";
+            txt5.Size = new Size(150, 31);
+            txt5.TabIndex = 30;
+            // 
+            // txt4
+            // 
+            txt4.Location = new Point(121, 139);
+            txt4.Name = "txt4";
+            txt4.Size = new Size(150, 31);
+            txt4.TabIndex = 29;
             // 
             // grpSummary
             // 
@@ -451,54 +481,6 @@
             label3.Size = new Size(89, 29);
             label3.TabIndex = 10;
             label3.Text = "Budget";
-            // 
-            // txt4
-            // 
-            txt4.Location = new Point(121, 139);
-            txt4.Name = "txt4";
-            txt4.Size = new Size(150, 31);
-            txt4.TabIndex = 29;
-            // 
-            // txt5
-            // 
-            txt5.Location = new Point(122, 175);
-            txt5.Name = "txt5";
-            txt5.Size = new Size(150, 31);
-            txt5.TabIndex = 30;
-            // 
-            // txt6
-            // 
-            txt6.Location = new Point(121, 211);
-            txt6.Name = "txt6";
-            txt6.Size = new Size(150, 31);
-            txt6.TabIndex = 31;
-            // 
-            // lblShopping
-            // 
-            lblShopping.AutoSize = true;
-            lblShopping.Location = new Point(39, 139);
-            lblShopping.Name = "lblShopping";
-            lblShopping.Size = new Size(88, 25);
-            lblShopping.TabIndex = 32;
-            lblShopping.Text = "shopping";
-            // 
-            // lblHealth
-            // 
-            lblHealth.AutoSize = true;
-            lblHealth.Location = new Point(39, 175);
-            lblHealth.Name = "lblHealth";
-            lblHealth.Size = new Size(60, 25);
-            lblHealth.TabIndex = 33;
-            lblHealth.Text = "health";
-            // 
-            // lblOther
-            // 
-            lblOther.AutoSize = true;
-            lblOther.Location = new Point(31, 214);
-            lblOther.Name = "lblOther";
-            lblOther.Size = new Size(62, 25);
-            lblOther.TabIndex = 34;
-            lblOther.Text = "others";
             // 
             // Budget
             // 
