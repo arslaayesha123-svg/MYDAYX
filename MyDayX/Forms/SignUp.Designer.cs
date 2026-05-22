@@ -103,6 +103,7 @@
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(198, 31);
             txtConfirmPassword.TabIndex = 6;
+            txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // txtPassword
             // 
