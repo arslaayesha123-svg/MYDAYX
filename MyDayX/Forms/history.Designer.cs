@@ -179,7 +179,7 @@
             btn4.UseVisualStyleBackColor = true;
             btn4.Click += btn4_Click_1;
             // 
-            // History
+            // history
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -192,7 +192,7 @@
             Controls.Add(lblStatus);
             Controls.Add(dgvHistory);
             Controls.Add(panel1);
-            Name = "History";
+            Name = "history";
             Text = "History";
             Click += History_Load;
             panel1.ResumeLayout(false);

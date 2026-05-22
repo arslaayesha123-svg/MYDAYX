@@ -88,32 +88,7 @@ namespace MyDayX
             }
         }
 
-        private void btnIncome_Click(object sender, EventArgs e)
-        {
-            if (!double.TryParse(txtAmount.Text, out double amount) || amount <= 0)
-            {
-                MessageBox.Show("Please enter a valid amount!", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (string.IsNullOrEmpty(cmbSource.Text))
-            {
-                MessageBox.Show("Please select a source!", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            _repo.AddIncome(_userId, amount, cmbSource.Text);
-            LoadSummary();
-            RefreshDashboard();
-
-            MessageBox.Show("Income added!", "Success",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            txtAmount.Clear();
-            cmbSource.SelectedIndex = -1;
-        }
+       
 
         private void btnExpenses_Click(object sender, EventArgs e)
         {
@@ -203,5 +178,32 @@ namespace MyDayX
 
         private void label9_Click(object sender, EventArgs e) { }
         private void grpBudgetlimit_Enter(object sender, EventArgs e) { }
+
+        private void btnAddIncome_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(txtAmount.Text, out double amount) || amount <= 0)
+            {
+                MessageBox.Show("Please enter a valid amount!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(cmbSource.Text))
+            {
+                MessageBox.Show("Please select a source!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            _repo.AddIncome(_userId, amount, cmbSource.Text);
+            LoadSummary();
+            RefreshDashboard();
+
+            MessageBox.Show("Income added!", "Success",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtAmount.Clear();
+            cmbSource.SelectedIndex = -1;
+        }
     }
 }

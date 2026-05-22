@@ -70,6 +70,7 @@
             pictureBox1 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
+            btnAddIncome = new Button();
             grpExpenses.SuspendLayout();
             grpIncome.SuspendLayout();
             grpBudgetlimit.SuspendLayout();
@@ -316,6 +317,7 @@
             // grpIncome
             // 
             grpIncome.BackColor = Color.SeaShell;
+            grpIncome.Controls.Add(btnAddIncome);
             grpIncome.Controls.Add(cmbSource);
             grpIncome.Controls.Add(txtAmount);
             grpIncome.Controls.Add(label1);
@@ -482,6 +484,22 @@
             label3.TabIndex = 10;
             label3.Text = "Budget";
             // 
+            // btnAddIncome
+            // 
+            btnAddIncome.BackColor = Color.LightCoral;
+            btnAddIncome.FlatAppearance.BorderSize = 0;
+            btnAddIncome.FlatStyle = FlatStyle.Flat;
+            btnAddIncome.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddIncome.ForeColor = SystemColors.ActiveCaptionText;
+            btnAddIncome.Location = new Point(66, 115);
+            btnAddIncome.Name = "btnAddIncome";
+            btnAddIncome.Size = new Size(127, 40);
+            btnAddIncome.TabIndex = 20;
+            btnAddIncome.Text = "+ Add Income ";
+            btnAddIncome.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddIncome.UseVisualStyleBackColor = false;
+            btnAddIncome.Click += btnAddIncome_Click;
+            // 
             // Budget
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -560,5 +578,6 @@
         private TextBox txt6;
         private TextBox txt5;
         private TextBox txt4;
+        private Button btnAddIncome;
     }
 }
