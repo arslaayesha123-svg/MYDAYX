@@ -5,9 +5,7 @@
 A \*\*Windows Desktop Application\*\* built with \*\*C# (.NET 8)\*\* and \*\*WinForms\*\* for personal finance and daily task management.
 
 
-
 \---
-
 
 
 \## 📋 Features
@@ -98,10 +96,7 @@ MyDayX/
 
 ```
 
-
-
 \---
-
 
 
 \## 👩‍💻 Developer
